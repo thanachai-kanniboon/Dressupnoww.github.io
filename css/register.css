@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wdth,wght@62.5..100,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans Thai", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3EBF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image/index2.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* ค่าความเบลอ */
+    z-index: -1; /* ทำให้พื้นหลังอยู่ด้านหลัง */
+}
+.main {
+    background-color: rgba(255, 255, 255, 0.9); /* สีขาวโปร่งแสง 80% */
+    width: 400px;
+    padding: 20px 30px;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+    text-align: center;
+    color: #635147;
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.un,
+.email,
+.pass {
+    width: 80%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    text-align: center;
+    transition: border 0.3s;
+}
+
+.un:focus,
+.email:focus,
+.pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18);
+}
+
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background:#635147;
+    border: 0;
+    padding: 10px 30px;
+    font-size: 14px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.submit:hover {
+    background: #514138;
+}
+
+.register {
+    color: #635147;
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register a {
+    color: #8a6d63;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.register a:hover {
+    color: #635147;
+    text-decoration: underline;
+}
+
+.birth-label {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #635147;
+}
+
+.birthdate {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin: 10px auto 20px;
+    display: block;
+    text-align: center;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+.birthdate:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+}
+@media (max-width: 600px) {
+    .main {
+        width: 90%;
+        padding: 15px 20px;
+    }
+}
